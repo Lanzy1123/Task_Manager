@@ -1,0 +1,79 @@
+body {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Good! Centers table vertically */
+    margin: 0;  /* Add this to remove default margins */
+    font-family: Arial, sans-serif;  /* Optional: Cleaner look */
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;  /* Space from table */
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black ;
+    width: 80%;  /* Changed from 100% for better centering in flex */
+    max-width: 600px;  /* Prevents it from being too wide */
+    margin: 0 auto;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 12px;  /* Add padding for readability */
+    text-align: center;  /* Centers text in cells—instead of justify-content */
+}
+
+/* Bonus: Hover effect for rows */
+tr:hover {
+    background-color: #fff5f5;  /* Subtle highlight */
+}
+
+input[type=text] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    border: none;
+    padding: 3px;
+    transition: all .3s;
+    height: 50px;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+    border-bottom: 2px solid black;
+}
+input[type=submit] {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    background: #6a8eff;
+    align-items: center;
+    justify-content: center;
+   box-sizing: border-box;
+}
+form {
+    box-sizing: border-box;
+   }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 30px 10px 30px;
+    background: white;
+    min-width: 300px;
+    min-height: 200px;
+    padding: 5px;
+    
+}
